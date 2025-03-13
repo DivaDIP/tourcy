@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background: #DAD7C6;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+    </style>
+
+</head>
+
+<body class="bg-white">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center px-16 overflow-hidden">
+        <img src="../assets/logo tourcy.svg" alt="" class="w-20 h-20">
+        <ul class="hidden md:flex space-x-20 text-gray-700 font-bold">
+            <li><a href="index.html" class="text-satu hover:text-tiga">Home</a></li>
+            <li><a href="aboutUs.html" class="text-satu hover:text-tiga">About</a></li>
+            <li><a href="destination.html" class="text-satu hover:text-tiga">Destinations</a></li>
+        </ul>
+        <div class="space-x-4">
+            <!-- Sign In Button -->
+            <a href=""
+                class="bg-white text-satu font-bold border border-dua hover:text-white hover:bg-dua transition-all duration-300 px-4 py-2 rounded-lg">
+                Sign In
+            </a>
+
+            <!-- login button -->
+            <a href="login.html"
+                class="bg-dua text-white border border-dua hover:text-dua hover:bg-transparent transition-all duration-300 font-bold px-4 py-2 rounded-lg">
+                Login
+            </a>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- banner about us -->
+    <section class="relative text-center text-white bg-tiga py-20">
+        <h2 class="text-4xl font-bold">About Us</h2>
+    </section>
+    <!-- end banner about us -->
+
+    <!-- About Us Section -->
+    <section class="py-16 text-center">
+        <h3 class="text-dua font-semibold text-2xl">About Us</h3>
+        <h2 class="text-3xl font-bold text-tiga">Introduction To Best Digital Agency!</h2>
+        <div class="flex justify-center mt-5">
+            <img src="../assets/Destinations (1).svg" alt="Team Working" class="rounded-lg shadow-lg">
+        </div>
+        <div class="flex justify-center space-x-5 mt-5">
+            <div class="bg-white p-5 shadow-lg rounded-lg">
+                <h4 class="text-xl font-bold text-dua">Best Price Guaranteed</h4>
+                <p class="text-gray-500">Enjoy an affordable vacation with the best <br> deals you won’t find anywhere
+                    else!</p>
+            </div>
+            <div class="bg-white p-5 shadow-lg rounded-lg">
+                <h4 class="text-xl font-bold text-dua">Trip Planning</h4>
+                <p class="text-gray-500">We help you plan your dream vacation <br> according to your budget!</p>
+            </div>
+            <div class="bg-white p-5 shadow-lg rounded-lg">
+                <h4 class="text-xl font-bold text-dua">Experienced Tour Guides</h4>
+                <p class="text-gray-500">Explore top destinations with the guidance of <br> our professional team, ready
+                    to assist you!</p>
+            </div>
+        </div>
+    </section>
+    <!-- end about us section -->
+
+    <!-- team section -->
+    <section class="py-20 bg-gray-50 text-center px-6">
+        <h3 class="text-dua font-semibold text-lg">Our Team</h3>
+        <h2 class="text-4xl font-bold mb-6 text-tiga">Meet Our Team Members</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition">
+                <img src="../assets/Marlenna Janette.svg"
+                    class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-200">
+                <h4 class="text-2xl font-semibold text-dua">Marlenna Janette</h4>
+                <p class="text-dua">CEO, Tourcy</p>
+            </div>
+            <div class="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition">
+                <img src="../assets/John Salim.svg"
+                    class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-200">
+                <h4 class="text-2xl font-semibold text-dua">John Salim</h4>
+                <p class="text-dua">Head Manager</p>
+            </div>
+            <div class="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition">
+                <img src="../assets/Variano Arlan.svg"
+                    class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-200">
+                <h4 class="text-2xl font-semibold text-dua">Variano Arlan</h4>
+                <p class="text-dua">Secretary</p>
+            </div>
+        </div>
+    </section>
+    <!-- end team section -->
+
+    <!-- footer -->
+    <footer class="bg-gradient-to-r from-dua to-tiga text-white py-10 mt-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Logo & Deskripsi -->
+            <div>
+                <img src="../assets/logo tourcy.svg" class="w-20 h-20" alt="">
+                <p class="mt-3 text-gray-200">Jelajahi dunia tanpa batas dengan layanan terbaik dari kami. Nikmati
+                    perjalanan yang tak terlupakan!</p>
+            </div>
+
+            <!-- Navigasi Cepat -->
+            <div>
+                <h3 class="text-2xl font-semibold border-b-2 border-white pb-2">Navigasi</h3>
+                <ul class="mt-4 space-y-3">
+                    <li><a href="#" class="hover:text-empat transition duration-300">Home</a></li>
+                    <li><a href="#" class="hover:text-empat transition duration-300">About</a></li>
+                    <li><a href="#" class="hover:text-empat transition duration-300">Destinations</a></li>
+                </ul>
+            </div>
+
+            <!-- Sosial Media -->
+            <div>
+                <h3 class="text-2xl font-semibold border-b-2 border-white pb-2">Follow Us</h3>
+                <div class="mt-4 flex space-x-5">
+                    <a href="#" class="hover:text-empat transition duration-300 text-2xl"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-empat transition duration-300 text-2xl"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-empat transition duration-300 text-2xl"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-empat transition duration-300 text-2xl"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-gray-300 text-sm mt-10 border-t border-gray-500 pt-4">
+            &copy; 2025 Tourcy. Dibuat dengan hati untuk petualang sejati.
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>

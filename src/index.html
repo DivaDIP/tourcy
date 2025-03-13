@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background: #DAD7C6;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+    </style>
+
+</head>
+
+<body class="bg-white">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center px-16 overflow-hidden">
+        <img src="../assets/logo tourcy.svg" alt="" class="w-20 h-20">
+        <ul class="hidden md:flex space-x-20 text-gray-700 font-bold">
+            <li><a href="#" class="text-satu hover:text-tiga">Home</a></li>
+            <li><a href="aboutUs.html" class="text-satu hover:text-tiga">About</a></li>
+            <li><a href="destination.html" class="text-satu hover:text-tiga">Destinations</a></li>
+        </ul>
+        <div class="space-x-4">
+            <!-- Sign In Button -->
+            <a href="" class="bg-white text-satu font-bold border border-dua hover:text-white hover:bg-dua transition-all duration-300 px-4 py-2 rounded-lg">
+                Sign In
+            </a>
+
+                <!-- login button -->
+            <a href="login.html" class="bg-dua text-white border border-dua hover:text-dua hover:bg-transparent transition-all duration-300 font-bold px-4 py-2 rounded-lg">
+                Login
+            </a>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- Hero Section -->
+    <section class="flex flex-row items-center justify-between p-10 bg-white mx-24 mt-20 mb-20 overflow-hidden">
+        <div class="ml-5 max-w-lg">
+            <h2 class="text-5xl font-bold text-dua">Discover The Best Destinations In The World</h2>
+            <p class="text-gray-600 mt-4">
+                Let’s find you dream destinations here, we will recommend a beautiful place and a cheap trip with your
+                beloved family.
+            </p>
+            <div class="mt-6 flex space-x-4">
+                <button
+                    class="bg-dua text-white border border-dua hover:text-dua hover:bg-transparent transition-all duration-300 px-6 py-3 font-bold rounded-lg">Get
+                    Started</button>
+            </div>
+        </div>
+        <div>
+            <img src="../assets/header.svg" alt="Travel" class="w-85 h-96 rounded-lg shadow-lg object-cover" />
+        </div>
+    </section>
+    <!-- end hero section -->
+
+    <!-- Partner Section -->
+    <div class="mt-16 text-center pt-20 mb-20">
+        <h2 class="text-5xl font-bold text-dua">Our <span
+                class="text-lima bg-tiga rounded-2xl px-2 py-2">Partners</span></h2>
+        <p class="text-gray-600 mt-5">Trusted by top travel companies</p>
+        <div class="mt-6 flex justify-center space-x-10">
+            <img src="../assets/garuda.svg" class="h-12" alt="Airline">
+            <img src="../assets/garuda.svg" class="h-12" alt="Hotel">
+            <img src="../assets/garuda.svg" class="h-12" alt="Travel">
+            <img src="../assets/garuda.svg" class="h-12" alt="Travel">
+            <img src="../assets/garuda.svg" class="h-12" alt="Travel">
+            <img src="../assets/garuda.svg" class="h-12" alt="Travel">
+            <img src="../assets/garuda.svg" class="h-12" alt="Travel">
+        </div>
+    </div>
+    <!-- end partner section -->
+
+    <!-- destinations -->
+    <section class="py-16 px-6 pt-20 overflow-hidden">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-bold text-center text-empat mb-5">
+                Spot <span class="text-tiga">Wisata</span> Terbaik
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6 pt-8">
+
+                <!-- Destination Card 1 -->
+                <div
+                    class="relative rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300 cursor-pointer">
+                    <img src="../assets/singapura.svg" alt="Singapura" class="w-full h-56 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-4">
+                        <h3 class="text-white text-xl font-bold">Singapura</h3>
+                        <p class="text-white text-sm">497 accommodations</p>
+                    </div>
+                </div>
+
+                <!-- Destination Card 2 -->
+                <div
+                    class="relative rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300 cursor-pointer">
+                    <img src="../assets/malaysia.svg" alt="Malaysia" class="w-full h-56 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-4">
+                        <h3 class="text-white text-xl font-bold">Swiss</h3>
+                        <p class="text-white text-sm">10,390 accommodations</p>
+                    </div>
+                </div>
+
+                <!-- Destination Card 3 -->
+                <div
+                    class="relative rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300 cursor-pointer">
+                    <img src="../assets/indonesia.svg" alt="Thailand" class="w-full h-56 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-4">
+                        <h3 class="text-white text-xl font-bold">Indonesia</h3>
+                        <p class="text-white text-sm">34,103 accommodations</p>
+                    </div>
+                </div>
+
+                <!-- Destination Card 4 -->
+                <div
+                    class="relative rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300 cursor-pointer">
+                    <img src="../assets/canada.svg" alt="Korea Selatan" class="w-full h-56 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-4">
+                        <h3 class="text-white text-xl font-bold">Kanada</h3>
+                        <p class="text-white text-sm">24,393 accommodations</p>
+                    </div>
+                </div>
+
+                <!-- Destination Card 5 -->
+                <div
+                    class="relative rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300 cursor-pointer">
+                    <img src="../assets/turkey.svg" alt="Jepang" class="w-full h-56 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-4">
+                        <h3 class="text-white text-xl font-bold">Turkey</h3>
+                        <p class="text-white text-sm">22,348 accommodations</p>
+                    </div>
+                </div>
+
+                <!-- Destination Card 6 -->
+                <div
+                    class="relative rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300 cursor-pointer">
+                    <img src="../assets/thailand.svg" alt="Hong Kong" class="w-full h-56 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-4">
+                        <h3 class="text-white text-xl font-bold">Thailand</h3>
+                        <p class="text-white text-sm">750 accommodations</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end destinations -->
+
+    <!-- promo section -->
+    <div class="container mx-auto py-10 px-5 mb-20 mt-20">
+        <h1 class="text-3xl font-bold text-satu text-center">Diskon Spesial, Liburan Makin Total!</h1>
+
+        <div class="flex justify-center space-x-3 mt-5">
+            <button class="bg-tiga text-white px-4 py-2 rounded-full">Diskon & Harga Spesial</button>
+            <button
+                class="bg-empat text-satu px-4 py-2 rounded-full hover:bg-transparent hover: border border-empat hover:text-satu transition">Kupon
+                & Cashback</button>
+            <button
+                class="bg-empat text-satu px-4 py-2 rounded-full hover:bg-transparent hover: border border-empat hover:text-satu transition">
+                Promo Musiman</button>
+            <button
+                class="bg-empat text-satu px-4 py-2 rounded-full hover:bg-transparent hover: border border-empat hover:text-satu transition">Paket
+                Hemat</button>
+        </div>
+
+        <div class="mt-8 flex space-x-4 overflow-x-auto">
+            <img src="../assets/banner 1.svg" class="w-1/3 rounded-lg shadow-lg">
+            <img src="../assets/banner 2.svg" class="w-1/3 rounded-lg shadow-lg">
+            <img src="../assets/banner 3.svg" class="w-1/3 rounded-lg shadow-lg">
+            <img src="../assets/banner 2.svg" class="w-1/3 rounded-lg shadow-lg">
+            <img src="../assets/banner 1.svg" class="w-1/3 rounded-lg shadow-lg">
+        </div>
+
+        <div class="text-center mt-5">
+            <a
+                class="bg-dua text-white px-6 py-3 rounded-full cursor-pointer hover:bg-transparent hover: border border-dua hover:text-dua transition">Lihat
+                Promo</a>
+        </div>
+    </div>
+    <!-- end promo -->
+
+
+    <!-- prduct wrapper -->
+    <div class="container pb-16">
+        <h2 class="text-4xl font-bold text-center text-dua mb-16"><span class="text-tiga">Top</span> Destinations</h2>
+        <!-- product grid -->
+        <div class="grid grid-cols-4 gap-6">
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div
+                    class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/Indonesia (1).svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Indonesia
+                    </h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-dua">$400.00</span>
+                        <span class="text-sm text-gray-500 line-through">$650.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="view.html"
+                    class="mt-6 block w-full py-2 bg-empat text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-empat hover:bg-transparent hover:text-empat hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                    See details
+                </a>
+            </div>
+            <!-- end single product -->
+
+
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div
+                    class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/thailand (1).svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Thailand
+                    </h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-dua">$550.000</span>
+                        <span class="text-sm text-gray-500 line-through">$850.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                    class="mt-6 block w-full py-2 bg-empat text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-empat hover:bg-transparent hover:text-empat hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                    See Detail
+                </a>
+            </div>
+            <!-- end single product -->
+
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div
+                    class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/singapur.svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Singapura
+                    </h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-dua">$650.000</span>
+                        <span class="text-sm text-gray-500 line-through">$900.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                    class="mt-6 block w-full py-2 bg-empat text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-empat hover:bg-transparent hover:text-empat hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                    See Detail
+                </a>
+            </div>
+            <!-- end single product -->
+
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div
+                    class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/kanada (1).svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Canada
+                    </h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-dua">$350.000</span>
+                        <span class="text-sm text-gray-500 line-through">$680.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                    class="mt-6 block w-full py-2 bg-empat text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-empat hover:bg-transparent hover:text-empat hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                    See Details
+                </a>
+            </div>
+            <!-- end single product -->
+
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div
+                    class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/turkey (1).svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Turkey
+                    </h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-dua">$650.000</span>
+                        <span class="text-sm text-gray-500 line-through">$743.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                    class="mt-6 block w-full py-2 bg-empat text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-empat hover:bg-transparent hover:text-empat hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                    See Details
+                </a>
+            </div>
+            <!-- end single product -->
+
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div
+                    class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/london.svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">London
+                    </h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-dua">$387.000</span>
+                        <span class="text-sm text-gray-500 line-through">$490.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                    class="mt-6 block w-full py-2 bg-empat text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-empat hover:bg-transparent hover:text-empat hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                    See Details
+                </a>
+            </div>
+            <!-- end single product -->
+
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div
+                    class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/swiss.svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Swiss</h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-dua">$483.000</span>
+                        <span class="text-sm text-gray-500 line-through">$700.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                    class="mt-6 block w-full py-2 bg-empat text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-empat hover:bg-transparent hover:text-empat hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                    See Details
+                </a>
+            </div>
+            <!-- end single product -->
+
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded group">
+                <!-- image -->
+                <div
+                    class="relative cursor-pointer bg-white rounded-lg overflow-hidden transform transition duration-300 ease-in-out">
+                    <img src="../assets/rome.svg" alt="" class="w-full">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href="view.html" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-9 bg-tiga rounded-full flex justify-center items-center
+                    hover:bg-green-950 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end image -->
+
+                <!-- desc product -->
+                <div class="pt-4 pb-3 px-4">
+                    <!-- name product -->
+                    <h3 class="text-2xl font-semibold text-green-950 hover:opacity-70 cursor-pointer">Italy</h3>
+
+                    <!-- price -->
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="text-xl font-bold text-dua">$560.000</span>
+                        <span class="text-sm text-gray-500 line-through">$950.000</span>
+                    </div>
+                    <!-- end price -->
+
+                    <!-- rating -->
+                    <div class="flex items-center">
+                        <!-- rating bintang -->
+                        <div class="flex gap-1 text-sm text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <!-- rating angka -->
+                        <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>
+                </div>
+                <!-- end desc product -->
+
+                <!-- button buy -->
+                <a href="#"
+                    class="mt-6 block w-full py-2 bg-empat text-white text-center rounded-lg font-semibold transition-all duration-300 transform border border-empat hover:bg-transparent hover:text-empat hover:shadow-xl hover:rotate-2 hover:scale-105 hover:translate-y-1">
+                    Add to cart
+                </a>
+            </div>
+            <!-- end single product -->
+
+
+        </div>
+        <!-- end product grid -->
+    </div>
+    <!-- end product wrapper -->
+
+    <!-- footer -->
+    <footer class="bg-gradient-to-r from-dua to-tiga text-white py-10 mt-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Logo & Deskripsi -->
+            <div>
+                <img src="../assets/logo tourcy.svg" class="w-20 h-20" alt="">
+                <p class="mt-3 text-gray-200">Jelajahi dunia tanpa batas dengan layanan terbaik dari kami. Nikmati
+                    perjalanan yang tak terlupakan!</p>
+            </div>
+
+            <!-- Navigasi Cepat -->
+            <div>
+                <h3 class="text-2xl font-semibold border-b-2 border-white pb-2">Navigasi</h3>
+                <ul class="mt-4 space-y-3">
+                    <li><a href="#" class="hover:text-empat transition duration-300">Home</a></li>
+                    <li><a href="#" class="hover:text-empat transition duration-300">About</a></li>
+                    <li><a href="#" class="hover:text-empat transition duration-300">Destinations</a></li>
+                </ul>
+            </div>
+
+            <!-- Sosial Media -->
+            <div>
+                <h3 class="text-2xl font-semibold border-b-2 border-white pb-2">Follow Us</h3>
+                <div class="mt-4 flex space-x-5">
+                    <a href="#" class="hover:text-empat transition duration-300 text-2xl"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-empat transition duration-300 text-2xl"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-empat transition duration-300 text-2xl"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-empat transition duration-300 text-2xl"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-gray-300 text-sm mt-10 border-t border-gray-500 pt-4">
+            &copy; 2025 Tourcy. Dibuat dengan hati untuk petualang sejati.
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>
